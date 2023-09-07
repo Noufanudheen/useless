@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Nexus eSports - Form</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #333, #222, #333, #111);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">
+        <header>
+        <div class="logo-section">
+            <img id="logo" src="images/logo.png" alt="Logo">
+            <img src="images/name.png" id="site-name" alt="Logo">
+        </div>
+        <div>
+            <a href="https://www.youtube.com/neonboxyt" target="_blank">
+                <img src="images/youtube.png" alt="YT" class="youtube"></a>
+        </div>
+    </header>
+    </a>
+    <div style="padding-left: 20px;">
+        <p><a href="index.html" style="color: #fff;">Home</a>>Register</p>
+    </div>
+    <main>
+        <div class="form-container">
+            <div class="form" id="form">
+                <h2>Submit Your Team Details</h2>
+                <form id="team-form" action="https://docs.google.com/forms/d/e/1FAIpQLScXVhU1oH73YjlYU1knuUGVK8ByQyyssskJ11EgTMqZHVYQyA/formResponse">
+                    <div id="team-form">
+                        <!-- Team -->
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="igl-ign">Team Name:</label>
+                                <input type="text" id="igl-ign" name="entry.791901063" placeholder="Team Name" required>
+                            </div>
+                        </div>
+                        <hr width="50%" color="gray" size="2px" />
+
+                        <!-- Group 1 -->
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="igl-id">IGL Player ID:</label>
+                                <input type="text" id="igl-id" name="entry.268948269" placeholder="IGL Player ID" required>
+                            </div>
+                            <div class="form-col">
+                                <label for="igl-ign">IGL In-Game Name:</label>
+                                <input type="text" id="igl-ign" name="entry.18479108" placeholder="IGL In-Game Name" required>
+                            </div>
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="form-col">
+                            <label for="igl-phone">IGL Phone No.:</label>
+                            <div class="phone-input-container">
+                                <div class="country-code-container">
+                                    <span class="country-code-prefix">+</span>
+                                    <input type="tel" id="country-code" name="country-code" value="91" class="editable-country-code" required>
+                                </div>
+                                <input type="tel" id="igl-phone" name="entry.959588551" placeholder="Enter mobile number" required>
+                            </div>
+                        </div>
+                        <hr width="50%" color="gray" size="2px" />
+              
+                        <!-- Group 2 -->
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="igl-id">Player 1 ID:</label>
+                                <input type="text" id="igl-id" name="entry.1161381983" placeholder="Player 1 ID" required>
+                            </div>
+                            <div class="form-col">
+                                <label for="igl-ign">Player 1 In-Game Name:</label>
+                                <input type="text" id="igl-ign" name="entry.465082671" placeholder="Player 1 In-Game Name" required>
+                            </div>
+                        </div>
+                        <hr width="50%" color="gray" size="2px" />
+
+                        <!-- Group 3 -->
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="igl-id">Player 2 ID:</label>
+                                <input type="text" id="igl-id" name="entry.31558747" placeholder="Player 2 ID" required>
+                            </div>
+                            <div class="form-col">
+                                <label for="igl-ign">Player 2 In-Game Name:</label>
+                                <input type="text" id="igl-ign" name="entry.1994839276" placeholder="Player 2 In-Game Name" required>
+                            </div>
+                        </div>
+                        <hr width="50%" color="gray" size="2px" />
+
+                        <!-- Group 4 -->
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="igl-id">Player 3 ID:</label>
+                                <input type="text" id="igl-id" name="entry.101503227" placeholder="Player 3 ID" required>
+                            </div>
+                            <div class="form-col">
+                                <label for="igl-ign">Player 3 In-Game Name:</label>
+                                <input type="text" id="igl-ign" name="entry.1310128159" placeholder="Player 3 In-Game Name" required>
+                            </div>
+                        </div>
+                        <hr width="50%" color="gray" size="2px" />
+
+                        <!-- Group 5 -->
+                        <label for="plyr4" style="padding-left: 0px;">(Optional)</label>
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="igl-id">Player 4 ID:</label>
+                                <input type="text" id="igl-id" name="entry.1320476196" placeholder="Player 4 ID">
+                            </div>
+                            <div class="form-col">
+                                <label for="igl-ign">Player 4 In-Game Name:</label>
+                                <input type="text" id="igl-ign" name="entry.28505953" placeholder="Player 4 In-Game Name">
+                            </div>
+                        </div>
+                    
+                        <input type="submit" value="Submit">
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="games.html">Games</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p class="contact-details">Mail us: contact@nexusesports.com</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

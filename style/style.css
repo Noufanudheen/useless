@@ -1,0 +1,441 @@
+body {
+    background: linear-gradient(to bottom, #333, #222, #333, #111), url('bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: height 0.3s, background-color 0.3s;
+    height: 80px; /* Set the height of the header */
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+#site-name {
+    height: 45px;
+    width: 100%;
+    margin: 0;
+    font-size: 24px;
+}
+
+.sub-header {
+    padding: 20px;
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Align items at the ends */
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sub-header p{
+    margin: 10px;
+    width: calc(100% - 150px);
+}
+
+.sub-header-link {
+    color: #fff;
+    text-decoration: none;
+    background: rgb(43, 0, 0);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+header, .sub-header {
+    background: linear-gradient(to right, rgb(0, 0, 20), rgb(30, 0, 0));
+}
+
+.header-info {
+    display: flex;
+    justify-content: center;
+}
+
+.info-content {
+    text-align: center;
+}
+
+.youtube {
+    width: 100%;
+    height: 30px;
+}
+
+.notification-bg {
+    background: linear-gradient(to bottom, #333, #222, #333, #111), url('notif.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    width: 88%;
+    padding: 40px 20px;
+    margin: 10px auto;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    justify-content: space-between;
+}
+
+.notification-bg p {
+    margin: 10px;
+    width: calc(100% - 150px); 
+    display: inline-block;
+    text-align: left;
+}
+
+.notification-bg p.left {
+    text-align: left; 
+    margin-right: auto;
+}
+
+
+.notification-link {
+    color: #fff;
+    text-decoration: none;
+    background: rgb(172, 103, 0);
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: calc(100% - 150px); 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-top: 35px;
+    margin-top: -20px;
+    position: relative;
+    z-index: 1;
+}
+
+.tile {
+    width: 88%;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s, opacity 0.3s, transform 0.3s;
+    opacity: 0;
+    transform: scale(0.5);
+    display: flex;
+    align-items: center;
+}
+
+.tile p{
+    margin: 0px;
+    width: calc(100%-50%);
+    flex: 1;
+    line-height: 2.33;
+}
+
+.tile:hover {
+    box-shadow: 0 0 15px rgba(200, 200, 200, 0.9);
+}
+
+#tileimg{
+    height: 200px;
+    width: 200px;
+    max-width: 100%;
+}
+
+.vertical-line {
+    border-left: 2px solid gray; 
+    height: 100px;
+    margin: 10px 10px;
+}
+
+#about-us-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+#about-us-content {
+    flex: 1;
+}
+
+.game-tile {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.game-logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.game-info {
+    flex: 1;
+}
+
+.status-ok {
+    font-weight: bold;
+    color: green; /* Change the color based on availability */
+}
+
+.status-no {
+    font-weight: bold;
+    color: red;
+}
+
+.status-hold {
+    font-weight: bold;
+    color: orange;
+}
+
+.form {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color: #fff;
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 30px;
+}
+
+#team-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+}
+
+.form-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+#team-form label {
+    font-weight: bold;
+    display: block;
+}
+
+#team-form input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+#team-form input[type="submit"] {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#team-form input[type="submit"]:hover {
+    background-color: #e74c19;
+}
+
+#igl-id,
+#player1-ign,
+#player2-ign,
+#player3-ign,
+#player4-ign {
+    width: calc(100% - 20px); 
+    color: #fff;
+}
+
+.phone-input-container {
+    display: flex;
+    align-items: center;
+}
+
+#country-code {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#phone-number {
+    flex: 3;
+}
+
+#igl-phone {
+    flex: 1; 
+}
+
+.country-code-container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 5px;
+    width: 70px;
+}
+
+.country-code-prefix {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.editable-country-code {
+    border: none;
+    background: none;
+    font-size: 16px;
+    width: 50px;
+    text-align: center;
+    color: #333;
+}
+
+#scroll-up-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+#scroll-up-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.contact-details {
+    color: #fff;
+    margin: 0;
+    text-align: right;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+    /* Adjust styles for medium-sized screens */
+    header {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+    }
+
+    #logo {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 5px;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    }
+    
+    #site-name {
+        height: 30px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .youtube {
+        height: 20px;
+        width: 100%;
+    }
+
+    main {
+        padding-top: 100px;
+    }
+
+    .footer-links {
+        flex-direction: column; /* Arrange footer links vertically */
+        align-items: flex-start; /* Align footer links to the left */
+    }
+
+    .tile {
+        width: 90%; /* Set the width to 90% for smaller screens */
+        margin: 10px auto;
+        padding: 15px;
+        font-size: 14px;
+        box-sizing: border-box; /* Ensure padding and borders are included in width calculation */
+    }
+
+    .form {
+        width: 80%; 
+        margin: 0 auto; 
+        padding: 20px;
+    }
+
+    #team-form {
+        max-width: 90%; /* Set the max-width of the form container to 90% */
+        margin: 0 auto; /* Center the form container horizontally */
+        padding: 10px; /* Add padding to the form container */
+    }
+
+    .form-row {
+        flex-direction: column; /* Arrange form rows vertically on medium-sized screens */
+        gap: 15px;
+    }
+
+    footer {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+    }
+
+    #tileimg{
+        height: 100px;
+        width: 100px;
+        max-width: 100%;
+    }
+}
